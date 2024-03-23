@@ -9,6 +9,10 @@
     <title>Aprendendo JS</title>
 
     <style>
+        html, body {
+            height: 100%;
+        }
+
         body {
             text-align: center;
         }
@@ -28,7 +32,9 @@
     <button ondblclick="eventoDblclick()">clique aqui</button>
 
 
-    <div id="box" onmousemove="adicionaTexto()" onmouseover="viraVermelho()" onmouseout="viraGreen()" style="width: 200px; height: 200px; background-color: lightgray;"></div>
+    <div id="box" onmousedown="viraBlack()" onmouseup="viraRed()" onmousemove="adicionaTexto()" onmouseover="viraVermelho()" onmouseout="viraGreen()" style="width: 200px; height: 200px; background-color: lightgray;"></div>
+
+    <input onfocus="quandoFocado()" style="padding: 80px; font-size: 50px;" type="text" name="texto" id="text" value="digite alguma coisa">
 
     <script src="js/script.js"></script>
     

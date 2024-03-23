@@ -70,3 +70,25 @@ function viraGreen(){
 //     let p = window.document.getElementById('texto');
 //     p.append('O mouse moveu<br>');
 // }
+
+function viraBlack() {
+    let div = window.document.getElementById('box');
+    div.style.backgroundColor = 'black';
+}
+
+
+function viraRed() {
+    let div = window.document.getElementById('box');
+    div.style.backgroundColor = 'red';
+}
+
+
+
+
+
+
+
+function quandoFocado() {
+    let input = window.document.getElementById('text');
+    input.value = "Está Focado";
+}
