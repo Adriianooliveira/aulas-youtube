@@ -12,12 +12,23 @@
         body {
             text-align: center;
         }
+
+        div#box {
+            margin: 20px auto;
+        }
     </style>
 </head>
 <body>
 
     <h1>Aprendendo javascript</h1>
     <p id="texto">texto</p>
+
+    <!-- <button onclick="eventoClick()">Clique aqui</button> -->
+
+    <button ondblclick="eventoDblclick()">clique aqui</button>
+
+
+    <div id="box" onmousemove="adicionaTexto()" onmouseover="viraVermelho()" onmouseout="viraGreen()" style="width: 200px; height: 200px; background-color: lightgray;"></div>
 
     <script src="js/script.js"></script>
     
