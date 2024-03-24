@@ -34,32 +34,40 @@ function verificaCor() {
 
 function diaSemana() {
     let dia = new Date(). getDay();
-
+    let p = window.document.getElementById('texto-2')
     switch (dia) {
 
         case 0:
-            console.log('Domingo')
+            console.log('Domingo');
+            p.innerHTML = `Hoje é Domingo.`
             break;
         case 1:
-            console.log('Segunda-feira')
+            console.log('Segunda-feira');
+            p.innerHTML = `Hoje é Segunda-feira.`
             break;
         case 2:
-            console.log('Terça-feira')
+            console.log('Terça-feira');
+            p.innerHTML = `Hoje é Terça-feira.`
             break;
         case 3:
-            console.log('Quarta-feira')
+            console.log('Quarta-feira');
+            p.innerHTML = `Hoje é Quarta-feira.`
             break;
         case 4:
-            console.log('Quinta-feira')
+            console.log('Quinta-feira');
+            p.innerHTML = `Hoje é Quinta-feira.`
             break;
         case 5:
-            console.log('Sexta-feira')
+            console.log('Sexta-feira');
+            p.innerHTML = `Hoje é Sexta-feira.`
             break;
         case 6:
-            console.log('Sábado')
+            console.log('Sábado');
+            p.innerHTML = `Hoje é Sábado.`
             break;
         
         default:
+            window.document.getElementById('texto-2').innerHTML = 'Não sei que dia é';
 
     }
 }
