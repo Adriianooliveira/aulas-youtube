@@ -22,7 +22,7 @@
         }
     </style>
 </head>
-<body>
+<body onload="alert('tela carregada')" onresize="console.log('ouve um redicionamento')">
 
     <h1>Aprendendo javascript</h1>
     <p id="texto">texto</p>
@@ -32,9 +32,28 @@
     <button ondblclick="eventoDblclick()">clique aqui</button>
 
 
-    <div id="box" onmousedown="viraBlack()" onmouseup="viraRed()" onmousemove="adicionaTexto()" onmouseover="viraVermelho()" onmouseout="viraGreen()" style="width: 200px; height: 200px; background-color: lightgray;"></div>
+    <div id="box" onmousedown="viraBlack()" onmouseup="viraRed()" onmousemove="adicionaTexto()" onmouseover="viraVermelho()" onmouseout="viraGreen()" style="width: 200px; height: 200px; background-color: lightgray;"> </div>
 
-    <input onfocus="quandoFocado()" style="padding: 80px; font-size: 50px;" type="text" name="texto" id="text" value="digite alguma coisa">
+    <input onblur="perderFoco()" onfocus="quandoFocado()" style="padding: 80px; font-size: 50px;" type="text" name="texto" id="text" value="já vem com texto" placeholder="digite alguma coisa">
+
+    <br>
+    <br>
+
+    <select onchange="mudou()" name="itens" id="itens">
+        <option value="1">valor 1</option>
+        <option value="2">valor 2</option>
+        <option value="3">valor 3</option>
+        <option value="4">valor 4</option>
+    </select>
+
+    <br>
+    <br>
+
+    <textarea onkeydown="teclaPress()" name="area" id="area" cols="30" rows="10" style="resize: none;"></textarea>
+
+    <textarea onkeypress="teclaPressSolta()" name="area2" id="area2" cols="30" rows="10" style="resize: none;"></textarea>
+
+    <textarea onkeyup="teclaSolta()" name="area3" id="area3" cols="30" rows="10" style="resize: none;"></textarea>
 
     <script src="js/script.js"></script>
     

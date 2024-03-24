@@ -90,5 +90,39 @@ function viraRed() {
 
 function quandoFocado() {
     let input = window.document.getElementById('text');
-    input.value = "Está Focado";
+    input.value = "";
+}
+
+function mudou() {
+    console.log('mudou');
+}
+
+function perderFoco() {
+    let input = window.document.getElementById('text');
+    input.value = "já vem com texto";
+}
+
+
+
+
+
+
+
+function teclaPress() {
+    let area = window.document.getElementById('area');
+    console.log('tecla pressionada');
+    area.style.border = '5px solid blue';
+}
+
+
+function teclaPressSolta() {
+    let area2 = window.document.getElementById('area2');
+    console.log('tecla pressionada e solta');
+    area2.style.border = '5px solid green';
+}
+
+function teclaSolta() {
+   let area3 = window.document.getElementById('area3');
+   console.log('tecla é solta') ;
+   area3.style.border = '5px solid purple';
 }
