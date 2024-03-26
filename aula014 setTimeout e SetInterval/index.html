@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="descrição para o site">
+    <meta name="keywords" content="palavra-chave,separada,por,virgula">
+    <meta name="author" content="Adriano de Oliveira Silva">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aprendendo JS</title>
+
+    <style>
+        body {
+            text-align: center;
+        }
+
+        .start{
+            background-color: green;
+            padding: 50px;
+            font-size: 20px;
+            color: white;
+            border: none;
+            margin-right: 20px;
+            border-bottom: 4px solid rgb(3, 76, 3);
+        }
+
+        .start:hover {
+            background-color: rgb(5, 152, 5);
+        }
+
+        .stop {
+            background-color: rgb(219, 144, 5);
+            padding: 50px;
+            font-size: 20px;
+            color: white;
+            border: none;
+            border-bottom: 4px solid rgb(193, 127, 6);
+        }
+
+        .stop:hover {
+            background-color: rgb(255, 166, 0);
+        }
+
+
+    </style>
+</head>
+<body>
+
+    <h1>Aprendendo javascript</h1>
+    <p id="texto">texto</p>
+    <h1>Controle de tempo</h1>
+    <h2 id="tempo">10</h2>
+    <button onclick="ativarContagem()" class="start">Ativar contagem</button>
+    <button onclick="paraContagem()" class="stop">Parar contagem</button>
+
+    
+
+    <script src="js/script.js"></script>
+    
+</body>
+</html>
